@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# try load rvm if it's not loaded
+[[ -s "$HOME/.rvm/scripts/rvm" ]] &&
+  command -v rvm >/dev/null 2>&1 || source "$HOME/.rvm/scripts/rvm"
+
+pattern=$(echo -n '\.rb
+\.gemspec
+\.jbuilder
+\.rake
+config\.ru
+Gemfile
+Rakefile' | tr "\\n" '|')
+
+files=`git diff --cached --name-status | grep -E "^[AM].*($pattern)$" | cut -f2-`
+if [ -n "$files" ]; then
+  bundle exec rubocop $files --force-exclusion
+fi

@@ -1,0 +1,21 @@
+Rails: {Enabled: true}
+
+Style/AlignParameters:
+  # Disable, till rubocop supports combination of styles.
+  # Use one of this styles where appropriate, keep it clean, compact and readable.
+  Enabled: false
+  # EnforcedStyle:
+  # - with_first_parameter
+  # - with_fixed_indentation
+Style/AndOr: {EnforcedStyle: conditionals}
+Style/ClosingParenthesisIndentation: {Enabled: false}
+Style/Documentation: {Enabled: false}
+Style/DotPosition: {EnforcedStyle: trailing}
+Style/FirstParameterIndentation: {EnforcedStyle: consistent}
+Style/IfUnlessModifier: {Enabled: false}
+Style/MultilineOperationIndentation: {EnforcedStyle: indented}
+Style/NestedParenthesizedCalls: {Enabled: false}
+Style/SignalException: {EnforcedStyle: only_raise}
+Style/SpaceInsideHashLiteralBraces: {EnforcedStyle: no_space}
+Style/TrailingCommaInArguments: {Enabled: false}
+Style/TrailingCommaInLiteral: {EnforcedStyleForMultiline: comma}
