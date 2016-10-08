@@ -7,6 +7,7 @@
 ## Development
 
 - run `bin/setup`
+- `rspec`
 
 ## License
 

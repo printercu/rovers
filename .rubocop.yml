@@ -19,3 +19,5 @@ Style/SignalException: {EnforcedStyle: only_raise}
 Style/SpaceInsideHashLiteralBraces: {EnforcedStyle: no_space}
 Style/TrailingCommaInArguments: {Enabled: false}
 Style/TrailingCommaInLiteral: {EnforcedStyleForMultiline: comma}
+
+Metrics/LineLength: {Max: 100}
