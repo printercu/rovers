@@ -3,4 +3,6 @@ module Rovers
 
   require 'rovers/plateau'
   require 'rovers/rover'
+
+  autoload :Cli, 'rovers/cli'
 end

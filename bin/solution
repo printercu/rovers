@@ -5,4 +5,4 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'rovers'
 
 require 'pry'
-Pry.start
+Rovers::Cli.start
